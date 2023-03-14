@@ -1,3 +1,5 @@
+// add up button
+
 const btnUp = {
   el: document.querySelector('.btn-up'),
   scrolling: false,

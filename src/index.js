@@ -2,6 +2,7 @@ import axios from 'axios';
 import Notiflix, { Notify } from 'notiflix';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
+// add up button
 import result from './js/btnUp';
 
 const refs = {
@@ -13,6 +14,7 @@ const refs = {
 refs.form.addEventListener('submit', onFormSubmit);
 refs.loadMore.addEventListener('click', onLoadMore);
 
+//gallery settings
 const simpleLightBox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionDelay: 250,
