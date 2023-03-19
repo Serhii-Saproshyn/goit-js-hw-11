@@ -39,7 +39,7 @@ function onFormSubmit(evt) {
     );
   }
 }
-
+// API settings
 async function pixabayAPI(name, page) {
   const BASE_URL = 'https://pixabay.com/api/';
 
@@ -71,7 +71,7 @@ async function pixabayAPI(name, page) {
     console.log(error);
   }
 }
-
+//image gallery markup
 function createMarkup(arr) {
   const markup = arr.hits
     .map(
@@ -108,6 +108,7 @@ function createMarkup(arr) {
   simpleLightBox.refresh();
 }
 
+// callback fot notifications
 function message(length, isVisible, per_page, total) {
   if (!length) {
     return Notify.failure(
@@ -124,6 +125,7 @@ function message(length, isVisible, per_page, total) {
   }
 }
 
+// function for button to load more pictures
 function onLoadMore() {
   refs.loadMore.classList.add('is-hidden');
   page += 1;
